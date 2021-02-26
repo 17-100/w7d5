@@ -29,8 +29,8 @@ export default class Contacts extends Component {
                     <h1>Contacts</h1>
                     {this.state.contacts.map(contact => {
                         return (
-                            <Link>
-                                <h3 key={contact.id}>{contact.name}</h3>
+                            <Link to={`/contacts/${contact.id}`} key={contact.id}>
+                                <h3>{contact.name}</h3>
                             </Link>
                         )
                     })}

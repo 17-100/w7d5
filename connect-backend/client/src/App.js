@@ -8,7 +8,7 @@ function App() {
     // React Fragment <>
     <>
       <Route exact path='/' component={Contacts} />
-      <Route exact path='/contacts/:id' component={ContactDetails} />
+      <Route exact path='/contacts/:contactId' component={ContactDetails} />
     </>
   )
 }
